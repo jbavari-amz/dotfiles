@@ -8,21 +8,17 @@ source ~/.git-completion.bash
 #source /home/jbavari/Development/emsdk/emsdk_env.sh
 
 # For RVM
-source /etc/profile.d/rvm.sh
+#source /etc/profile.d/rvm.sh
 
-# Enable default Elixir
-#/home/jbavari/.kiex/bin/kiex use 1.3.1
-#source $HOME/.kiex/elixirs/elixir-1.3.1.env
-#source $HOME/.kiex/elixirs/elixir-1.4.5.env
+# Enable erlang
+source ~/21.0/activate
+
+# Elixir version manager
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 source $HOME/.kiex/elixirs/elixir-1.7.3.env
 
+
 # Enable Erlang 18.3.
-#source ~/18.3/activate
-source ~/21.0.9/activate
-
-# Disable Inertial scroll
-synclient CoastingSpeed=0
-
 
 # For CUDA
 export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
@@ -41,8 +37,6 @@ export PATH=/usr/local/bin:$PATH
 export NPM_GLOBAL_PACKAGES=$HOME/.npm-packages/bin
 export PATH=$NPM_GLOBAL_PACKAGES:$HOME/.mix/escripts:$PATH
 
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
-source /home/jbavari/.evm/scripts/evm
 
 # Various variables you might want for your PS1 prompt instead
 Time12h="\T"
