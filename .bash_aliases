@@ -49,7 +49,7 @@ alias gce="git commit --no-verify -m"
 alias glog="git log --graph --all --decorate --pretty=oneline"
 
 # Elixir
-alias mte="mix test --exclude integration"
+alias mte="mix test --exclude integration --exclude benchmark"
 
 # PostgreSQL
 # alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'

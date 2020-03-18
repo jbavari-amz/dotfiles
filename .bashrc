@@ -4,6 +4,8 @@ source ~/.bash_colors
 source ~/.git-prompt.sh
 source ~/.git-completion.bash
 
+source ~/.local_env.sh
+
 # Enable emscripten utils
 #source /home/jbavari/Development/emsdk/emsdk_env.sh
 
